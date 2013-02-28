@@ -1,0 +1,79 @@
+{% extends '::base.html.twig' %}
+
+{#
+	Defined the page title
+#}
+{% block title %}
+	{{"title"|trans({})}}
+{% endblock %}
+
+
+{# 
+	Stylesheets compilations with cssrewrite, yui and less filters 
+#}
+{% block stylesheets %}
+
+	<link href='http://fonts.googleapis.com/css?family=ABeeZee|Roboto:500' rel='stylesheet' type='text/css' />
+
+	{% stylesheets 
+		'bundles/beltoncv/css/src/style.less'
+		filter="cssrewrite, less, ?yui_css"
+		output='bundles/beltoncv/css/style.min.css'
+	%}
+		<link rel="stylesheet" type="text/css" href="{{asset_url}}" media="screen" />
+	{% endstylesheets %}
+
+{% endblock %}
+
+
+{# 
+	Javascripts files compilation. The output contains all the external librairies, 
+	you don't need to compile them manualy just link the minify script
+#}
+{% block javascripts %}
+
+	{% javascripts 
+		'bundles/beltoncv/lib/*.js'
+		'bundles/beltoncv/js/src/lib/*.js'
+		'bundles/beltoncv/js/src/main.js'
+		filter="?yui_js"
+		output="bundles/beltoncv/js/app.min.js"
+	%}
+		<script type="text/javascript" src="{{asset_url}}"></script>
+	{% endjavascripts %}
+
+{% endblock %}
+
+{#
+	Create the different body block for the differents layers
+#}
+{% block body %}
+
+	<div class="layer">
+		{% block layer_1 %}{% endblock %}
+	</div>
+
+	<div class="layer">
+		{% block layer_2 %}{% endblock %}
+	</div>
+
+	<div class="layer">
+		{% block layer_3 %}{% endblock %}
+	</div>
+
+	<div class="layer">
+		{% block layer_4 %}{% endblock %}
+	</div>
+
+	<div class="layer">
+		{% block layer_5 %}{% endblock %}
+	</div>
+
+	<div id="navigator">
+
+		<div class="navigation navigation-up"></div>
+		<div class="navigation navigation-down"></div>
+
+	</div>
+
+{% endblock %}

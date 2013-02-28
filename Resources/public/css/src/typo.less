@@ -1,0 +1,70 @@
+// Body typo style :;
+body{
+	font-family: @font_text_family;
+	color:@color_white;
+	background-color:@color_black;
+	font-size:@font_size_default;
+	line-height:@font_line_height;
+}
+
+// Global title style
+h1, h2, h3, h4, h5, h6 {
+	font-family: @font_title_family;
+	font-weight:bold;
+}
+
+// Titles font size :
+h1{
+	font-size: 1.9em;
+	line-height: 32px;
+}
+h2{
+	font-size: 1.7em;
+	line-height: 28px;
+}
+h3{
+	font-size: 1.5em;
+	line-height: 26px;
+}
+h4{
+	font-size: 1.3em;
+	line-height: 24px;
+}
+h5{
+	font-size: 1.1em;
+	line-height: 22px;
+}
+h6{
+	font-size:1em;
+}
+
+// other text tags
+cite, em, blockquote{
+	font-style: italic;
+}
+strong{
+	font-weight:bold;
+}
+
+// margin and padding
+blockquote, p, h1, h2, h3, h4, h5, h6{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+blockquote{
+	padding-left:10px;
+	border-left:2px solid @color_soft_grey;
+	color:@color_grey;
+}
+
+a{
+	text-decoration:none;
+	color:@color_blue;
+	cursor:pointer;
+	.transition_duration(0.5s);
+	&:hover{
+		text-decoration:none;
+		color:@color_blue_dark;
+		.transition_duration(0.5s);
+	}
+}

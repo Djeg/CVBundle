@@ -1,0 +1,44 @@
+title: "David Jegat - cv interactif"
+layer_1:
+    title: "David Jegat"
+    sub_title: "Programeur web open-source"
+    menu:
+        skills: "Mes compétences"
+        traverses: "Mon parcour"
+        convince: "Vous convaincre"
+        contact: "Prenons contact"
+layer_2:
+    title: "Mes compétences"
+    skills:
+        html: >
+            Grand amateur de l'HTML 5 et de ces nouveautés, je maitrise parfaitement
+            les nouvelles balises et autre nouveautés qu'apporte cette version. HTML 5
+            Rocks !
+        js: >
+            Je suis un grand geek du javascript ! Je connais le DOM, jQuery et aussi
+            backbone JS. Je suis en mesure de construire n'importte quelle application
+            dynamique côté client (AJAX ...). Je suis aussi l'auteur d'une librairie 
+            javascript nommée JModul permettant une approche entièrement objet de votre
+            application web (un bundle symfony 2 est en cours de production !). Allez 
+            je vous le dit ... Javascript fait partie de mes langages favoris !
+        php: >
+            C'est probablement le langage que je maitrise le mieux. Je connais chaque
+            petit recoins de PHP 5 ! Grand amateur de la POO, je maitrise la plupart
+            des design pattern que je porte très facilement sur PHP. J'ai fondé un framework
+            PHP nommé "Belton" que j'ai abandonné pour Symfony2. Autant dire que PHP 
+            n'as que peu de secréts pour moi.
+        python: >
+            Haaaa .... Python ! C'est LE langage que je préfére. J'ai commencé le web
+            avec Python 2.7 je suis un fan absolue de sa syntax, sa philosophie ...
+            hélas le temps n'as pas joué en la faveur de ce langage mais peut-être 
+            que cela peut changé ! Je ne demande qu'a me replongé dans les tabulations
+            pythonienne qui à l'époque m'ont beaucoups apprisent.
+        symfony: >
+            Que dire sur ce framework à part ... c'est le meilleur. Je plaisante
+            bien sur, cependant aucun framework n'as réussi à me convertir avant
+            celui la (ROR, Django, Cake PHP ou J2EE ont échoués ... ). Symfony 2 est
+            pour moi le couteau suisse du web, il me serait difficile de renoncer
+            à ce framework au concepts si parfait ! Une mine d'or que je maîtrise 
+            dans les moindres recoins (ou presque ^^).
+layer_3:
+    title: "Mon parcour"
